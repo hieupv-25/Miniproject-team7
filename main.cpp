@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int a = 1, b = 2, c = 3;
-
-// Prototypes cho các hàm từ thành viên
-int add(int a, int b, int c);
-int subtract(int a, int b, int c);
-int multiply(int a, int b, int c);
+int subtract(int a, int b, int c){
+	return a-b-c; 
+}
 
 int main() {
-    // Sẽ được cập nhật sau khi có code từ thành viên
+	int a = 1, b = 2, c = 3;
+	int m = subtract(a,b,c);
+	cout<<m;
+	 
     return 0;
 }
+
